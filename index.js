@@ -1,6 +1,6 @@
 const program = require('commander');
 
-program.version('1.0.0').description('Simple password generator').parse();
+program.version('1.0.0').description('Simple Password Generator')
 
 program
   .option('-l, --length <number>', 'length of password', '8')
@@ -8,3 +8,8 @@ program
   .option('-nn, --no-numbers', 'remove numbers')
   .option('-ns, --no-symbols', 'remove symbols')
   .parse()
+
+const { length, save, numbers, symbols } = program.opts()
+
+// Get generated password
+const generatedPassword = createPassword(length, numbers, symbols)
