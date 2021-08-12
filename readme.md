@@ -34,6 +34,7 @@ npm unlink
 | ----- | ----------------- | ------------------------------- |
 | -l    | --length <number> | length of password (default: 8) |
 | -s    | --save            | save password to passwords.txt  |
+| -s    | --save   <string> | save password to custom path    |
 | -nn   | --no-numbers      | remove numbers                  |
 | -ns   | --no-symbols      | remove symbols                  |
 | -h    | --help            | display help for command        |
