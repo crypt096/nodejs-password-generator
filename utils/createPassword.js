@@ -16,7 +16,7 @@ const generatePassword = (length, chars) => {
   let password = ''
 
   for (let i = 0; i < length; i++) {
-    password += chars.charAt(random % chars.length)
+    password += chars.charAt(random[i] % chars.length)
   }
   return password
 }

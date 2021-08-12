@@ -6,7 +6,7 @@ const log = console.log
 const createPassword = require('./utils/createPassword')
 const savePassword = require('./utils/savePassword')
 
-program.version('1.0.0').description('Simple Password Generator')
+program.version('1.0.0').description(`crypt0's Password Generator`)
 
 program
   .option('-l, --length <number>', 'length of password', '8')
